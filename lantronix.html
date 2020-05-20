@@ -13,11 +13,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <!-- Favicon head tag -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <title>Kelly Nguyen | Lantronix ConsoleFlow</title>
 </head>
 
 <body>
-  <div class="container-fluid" style="max-width: 1000px;">
+
+  <div class="container-fluid animation footer-margin" style="max-width:1000px">
     <nav class="navbar navbar-custom">
       <a href="index.html">
         <div id="name">Kelly Nguyen</div>
@@ -27,18 +34,189 @@
 
     <div class="spacer"></div>
 
+    <div class="section-content">
+      <h1>Lantronix ConsoleFlow</h1>
+      <div class="spacer"></div>
 
-    <section class="intro">
-      <div class="med-text">I'm a customer-centric, collaborative designer and developer keen on creating outstanding
-        user experiences for B2B and B2C clients.</div>
-    </section>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div class="project-section">
+            <h3>Role</h3>
+            <p>UX Designer</p>
+          </div>
+          <div class="project-section">
+            <h3>Timeline</h3>
+            <p>September 2019 to present</p>
+          </div>
+        </div>
 
-    <div class="spacer"></div>
+        <div class="col-sm-6 col-xs-12">
+          <div class="project-section">
+            <h3>Context</h3>
+            <p>Internship</p>
+          </div>
+          <div class="project-section">
+            <h3>Tools</h3>
+            <p>Adobe XD and Illustrator</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Project Brief</h2>
+        <p>
+          ConsoleFlow is cloud and on-premise hosted management software that securely connects you to your console
+          managers and attached IT equipment. This software aggregates data into a centralized directory for accessing
+          all connected devices in a data center, development lab or a remote branch office. This project consisted of
+          the merge of two software products, which required a user interface facelift and design decisions for the
+          merged features and
+          functionalities.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <img data-enlargable class="img-fluid zoom-img" src="assets/consoleflow/figure1.png" />
+      </div>
+
+      <div class="project-section">
+        <h2>My Role</h2>
+        <p>
+          My role was a UX Designer. I filled the spot of the previous full-time UX Designer and completed designing the
+          remaining mockups. I collaborated closely with the product line manager and engineers to make sure that the
+          designs followed the product vision and that development was consistent with the design.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>The Problem</h2>
+        <h3 class="focus">"How do we merge two existing applications into one?"</h3>
+        <p>
+          The previous application, MACH10, was to be merged into ConsoleFlow. However, operations like firmware updates
+          and configuration updates were in their own separate tab in MACH10. In the original ConsoleFlow, all
+          operations were done on the Explore page, where users view a list of all devices first.
+        </p>
+        <img data-enlargable class="img-fluid zoom-img" src="assets/consoleflow/figure1-1.png" />
+
+      </div>
+
+      <div class="project-section">
+        <h2>The Solution</h2>
+        <strong>Divide user operations into their respective sections.</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          I decided to follow MACH10’s way of organizing user operations into their own tab because users perform
+          task-based operations. If they want to send a CLI command to a device, they go to the respective tab and
+          select the device(s) they wish to perform the operation on. I also chose to structure the application this way
+          because of future pricing model requirements that would show/hide add-on operations.
+        </p>
+        <div class="img-wrap">
+          <img data-enlargable class="img-fluid zoom-img img-bg" src="assets/consoleflow/figure2-1.gif" />
+        </div>
+
+
+        <div class="spacer"></div>
+        <strong>Develop a design with consistent user flows for each operation.</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          Consistency was so important to me during this design. There were many inconsistent flows throughout the
+          operations. For example, firmware updates for MACH10 could only be performed on device groups, which were
+          queried by a search string. Firmware updates for the previous ConsoleFlow required individual device
+          selection. There needed to be a consistent way of selecting devices for all operations, so I spent a lot of
+          time making sure flows made sense.
+        </p>
+        <img data-enlargable class="img-fluid zoom-img img-bg" src="assets/consoleflow/figure3-1.png" />
+
+
+        <div class="spacer"></div>
+        <strong>Extend design for upcoming features.</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          As the product continues to develop, new features will be added. I had to think about the question, “How would
+          a newly added feature affect the existing design?” There were a lot of things I had to keep in the back of my
+          mind so that newly added features wouldn’t conflict with my design.
+        </p>
+        <div class="img-wrap">
+          <img data-enlargable class="img-fluid zoom-img img-bg" src="assets/consoleflow/figure3-2.gif" />
+        </div>
+
+
+      </div>
+
+      <div class="project-section">
+        <h2>Challenges</h2>
+        <div class="mini-spacer"></div>
+        <strong>Prioritization of aspects of the design</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          Although I wanted to produce a thorough design for each operation, project deadlines were coming quickly and
+          engineers had to prioritize aspects of the design. There were technical limitations that the engineers had to
+          address before changing the front-end, so design decisions were pushed back until the later releases.
+        </p>
+        <div class="spacer"></div>
+        <strong>Modularizing content while still keeping user needs in mind</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          One of the engineers pointed out that separating operations into their own tabs makes simple processes
+          annoyingly difficult. I thought of the use cases where a user wanted to perform an action on multiple devices
+          or device groups, but not the simple cases of performing an action on a single device. I decided to put simple
+          operations within the device view because there were existing tabs for each operation.
+        </p>
+        <div class="spacer"></div>
+        <strong>Two different customer bases</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          Although MACH10 users would be familiar with the new ConsoleFlow operations, existing ConsoleFlow users would
+          have to get used to the new user interface. I had to communicate regularly with the project manager and
+          engineers to ensure that the new design would not prevent users from performing tasks with the user interface
+          facelift.
+        </p>
+
+      </div>
+
+
+      <div class="project-section">
+        <h2>Final Product</h2>
+        <div class="img-wrap">
+          <a href="https://consoleflow.com/" target="_blank"><img class="img-fluid img-bg zoom-img" src="assets/consoleflow/figure4.png" /></a>
+
+        </div>
+
+      </div>
+
+      <div class="project-section">
+        <h2>Lessons Learned</h2>
+        <div class="mini-spacer"></div>
+        <strong>Communication</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          Communication between product line managers, backend engineers, and front-end engineers is extremely
+          important. I had to make sure that the back-end engineers were able to carry out my design, but also ensure
+          that the front-end engineers were following my design carefully. If there were some inconsistencies, I would
+          file issues to make sure changes were made.
+        </p>
+        <div class="spacer"></div>
+        <strong>Mockups allow visualization of requirements</strong>
+        <div class="mini-spacer"></div>
+        <p>
+          Deliverables are needed during the requirements elicitation process so engineers can understand how to develop
+          for the application. Requirements can be hard to visualize when there is no design. The engineers preferred
+          having mockups to see how requirements would look on the user interface. I had to make sure I was on top of my
+          deliverables so that development wouldn’t be pushed behind.
+        </p>
+      </div>
+
+
+
+
+    </div>
 
     <footer class="footer">
-      <div>© Copyright 2020 Made by me, Kelly Nguyen!</div>
+      <div><a href="index.html">← Back to Home</a></div>
     </footer>
+
   </div>
+  <script src='script.js'></script>
+
 </body>
 
 

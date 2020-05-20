@@ -7,7 +7,7 @@
     <meta name="description" content="This is my responsive portfolio written in HTML and CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Manrope:200,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,400,500,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
@@ -72,8 +72,7 @@
                     As a result, the program coordinators are overloaded with responding to instructors that belong to
                     different schools and their current system was no longer effective.
                     To solve this, we partnered with them to continue an ongoing project to build an internal web and
-                    mobile
-                    application so they could manage
+                    mobile application.
                 </p>
             </div>
 
@@ -178,7 +177,7 @@
                 <div class="mini-spacer"></div>
                 <div class="subsection">
 
-                    <div class="header">Users</div>
+                    <div class="header-dark">Users</div>
                     <p>
                         We decided to use two different databases, our own and Firebase because Firebase has
                         authentication services that we could use. We took out the password column from our
@@ -191,14 +190,14 @@
                         which device to send the notification to.
                     </p>
 
-                    <div class="header">Announcement Replies</div>
+                    <div class="header-dark">Announcement Replies</div>
                     <p>
                         Announcement replies were an entirely new feature, so we had to create a new table for
                         it. I modified the existing announcements table to include an array of announcement
                         replies, and the replies would be loaded when using an announcement ID as a query.
                     </p>
 
-                    <div class="header">Check-In</div>
+                    <div class="header-dark">Check-In</div>
                     <p>
                         Originally, check-in only had timestamps, but our clients wanted us to implement
                         geolocation. I used the Google Maps API to obtain the user’s coordinates and translate
@@ -212,7 +211,7 @@
                 <div class="mini-spacer"></div>
 
                 <div class="subsection">
-                    <div class="header">Announcements</div>
+                    <div class="header-dark">Announcements</div>
                     <p>
                         For this page, I made an API call to retrieve all of the announcements and loaded them
                         into
@@ -232,7 +231,7 @@
                 </div>
 
                 <div class="subsection">
-                    <div class="header">Check-In</div>
+                    <div class="header-dark">Check-In</div>
                     <p>
                         This screen makes a call to the API with the user’s ID as the query. It shows all the
                         check-ins related to that user and displays them in another FlatList with cards. The
@@ -248,7 +247,7 @@
                 <div class="mini-spacer"></div>
 
                 <div class="subsection">
-                    <div class="header">Consistency matters</div>
+                    <div class="header-dark">Consistency matters</div>
                     <p>
 
                         We had some inconsistent buttons and styling because different
@@ -266,7 +265,7 @@
                 <div class="mini-spacer"></div>
 
                 <div class="subsection">
-                    <div class="header">Validation</div>
+                    <div class="header-dark">Validation</div>
                     <p>
                         Registration includes a lot of text inputs. Sometimes, users enter
                         incorrect information
@@ -283,7 +282,7 @@
                 <strong>Second Round</strong>
                 <div class="mini-spacer"></div>
                 <div class="subsection">
-                    <div class="header">Filtering</div>
+                    <div class="header-dark">Filtering</div>
                     <p>
                         One participant explained the way they’d use Announcements and suggested
                         improvements.
@@ -314,7 +313,7 @@
             <h2>What I Learned</h2>
 
             <div class="subsection">
-                <div class="header">Documentation</div>
+                <div class="header-dark">Documentation</div>
                 <p>
                     I didn’t realize how difficult it would be to understand another persons’ code.
                     I thought most code is self-explanatory if you understand how to code. However, I would’ve
@@ -327,7 +326,7 @@
             </div>
 
             <div class="subsection">
-                <div class="header">The importance of a reliable back-end</div>
+                <div class="header-dark">The importance of a reliable back-end</div>
                 <p>
                     The important of a reliable back-end. I had never done back-end development before. I
                     didn’t
@@ -343,7 +342,7 @@
 
 
             <div class="subsection">
-                <div class="header">User account lifecycle</div>
+                <div class="header-dark">User account lifecycle</div>
                 <p>
                     Users aren’t always going to be enabled or approved on the
                     system.
