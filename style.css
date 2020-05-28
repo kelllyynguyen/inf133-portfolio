@@ -80,9 +80,24 @@ body {
     text-align:center;
 }
 
+.green {
+    background-color: #d7f1f0;
+}
+
+.blank {
+    background-color: none;
+}
+
 .img-bg {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
 
 .project-section strong {
     font-size: 1.25rem;
@@ -209,6 +224,7 @@ hr {
 .m-top {
     margin-top:1rem;
 }
+
 
 .zoom-img {
     cursor: pointer;

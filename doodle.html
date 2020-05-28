@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
   <!-- Favicon head tag -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -158,27 +161,7 @@
 
 
         <strong>Usability Evaluation</strong>
-        <div class="mini-spacer"></div>
 
-        <div class="subsection">
-          <div class="header-dark">Cognitive Walkthrough</div>
-          <p>
-            We focused on three tasks:
-            <ol>
-              <li>Creating a poll</li>
-              <li>Editing a poll</li>
-              <li>Closing the poll and exporting data</li>
-            </ol>
-          </p>
-          <p>We chose to create a poll as a task because it serves as a basis for what users primarily use
-            Doodle for. Then, we wanted to edit a poll to see the sequence of actions and how it differs from a poll
-            creation. Our last task focused on closing the poll and exporting it to Excel so that poll creators can view
-            the responses on a spreadsheet document.
-          </p>
-          <p>To identify any potential usability problems, we answered a set of
-            four questions per each tasks’ step. We recorded any potential errors or usability issues that we ran
-            through when performing these tasks.</p>
-        </div>
 
         <div class="mini-spacer"></div>
         <div class="subsection">
@@ -222,10 +205,7 @@
             a number of different types of events generally had used a scheduling service in order to keep track of
             their availability.
           </p>
-          <img class="img-fluid" src="assets/doodle/figure1.png" />
-          <div class="img-caption">Figure 1: A pivot table consisting of the most common scheduling service versus the
-            type of events people participate in/coordinate
-          </div>
+          <img data-enlargable class="img-fluid zoom-img" src="assets/doodle/figure1 copy.png" />
         </div>
 
         <div class="spacer"></div>
@@ -301,48 +281,13 @@
 
         <div class="spacer"></div>
 
-        <strong>Cognitive Walkthrough</strong>
-        <div class="mini-spacer"></div>
-        <div class="subsection">
-          <p>
-            Overall, we found Doodle is a system that relies too heavily on the user’s knowledge of similar systems. As
-            a first time user, there is not enough feedback given by the system to guide the user in the right
-            direction. If the user has an error, the system does not inform the user of any problems. An example of this
-            is if you leave the Doodle empty, the “Continue” button will be grayed out but not state the reason why.
-          </p>
-        </div>
-
-        <div class="spacer"></div>
-
         <strong>Usability Evaluation</strong>
         <div class="mini-spacer"></div>
 
         <div class="subsection">
           <div class="header-dark">Visual Design</div>
           <p>
-            The visual design pain points that our group discovered occurred on both the Poll Creator and the
-            Participant side. One of the key issues that each of our six usability test participants identified was
-            Doodle’s use of advertising within the user experience. While ad placement plays a key role in developing
-            revenue for a company, it should not disturb the user while they are navigating through a website.
-          </p>
-          <p>
-            <b>Figure 5</b> displays an example of one of Doodle’s landing pages when creating a poll. Not only
-            are they quite distracting, but the size of the advertisements themselves are quite large, especially the
-            advertisements on the users left and right side. One of the usability test participants accidentally
-            clicked an advertisement twice during their experience, once when creating a poll and once when voting on
-            a poll. A simple mistake like this leads to pop ups and user frustration, and can overall be quite
-            intrusive.
-          </p>
-
-          <img class="img-fluid" src="assets/doodle/figure5.png" />
-          <div class="img-caption">Figure 5: A word cloud that utilizes the data of the question “What do you like
-            about that scheduling service?”
-          </div>
-
-          <div class="spacer"></div>
-
-          <p>
-            Another main visual design issue that we discovered was the use of overlapping time slots when creating and
+            One main visual design issue that we discovered was the use of overlapping time slots when creating and
             voting on a poll in week view. <b>Figure 6 and 7 </b>show examples of what overlapping times will look like
             in week
             view from a poll creator and a participant respectively. When a user is trying to create a series of
@@ -365,8 +310,69 @@
           </div>
           <div class="img-caption m-top">Figure 7: Voting on a poll with overlapping time slots in week view.</div>
         </div>
+        <div class="spacer"></div>
+        <div class="subsection">
+          <div class="header-dark">Confusing and Unclear Labels</div>
+          <p>
+            When creating a poll, users generally have an idea of what type they would like to create: one that shows
+            availabilities and one that reveals opinions. Doodle represents these options as “Week,” “Month,” and
+            “Text.” When prompted to create a Doodle asking for availabilities for three days, 2 out of 6 participants
+            selected “Text” and manually listed Monday through Friday for their event (Figure 8). The participants could
+            have easily selected the “Week” or “Month” option to select dates shown on a calendar (Figure 9). However,
+            the three labels are ambiguous as to what they represent and do not provide context in the interface until
+            selected.
+          </p>
+          <div class="d-flex justify-content-center">
+            <img class="img-fluid" src="assets/doodle/figure8.png" />
+          </div>
+          <div class="img-caption m-top">Figure 8: Manually entering in date options using a “Text” Doodle.</div>
+          <div class="mini-spacer"></div>
+          <div class="d-flex justify-content-center">
+            <img class="img-fluid" src="assets/doodle/figure9.png" />
+          </div>
+          <div class="img-caption m-top">Figure 9: Selecting date options using a “Week” Doodle.</div>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="subsection">
+          <div class="header-dark">Ambiguity</div>
+          <p>
+            The last of Doodle’s issues that arose from our findings was ambiguous options. Doodle has a number of
+            common and useful functionalities for getting a specific task done. The issue lies in how a user finds out
+            about them. For example, one of our usability testers, when creating a poll, wanted to let participants know
+            to only vote once , so they wrote a note on the poll specifying those instructions. However, Doodle polls
+            already have the option to only allow one vote per person. The user wouldn't know about this functionality
+            because it appears towards the end of poll creation.
+            <p>
+              It is also confusing for users to know where to click when trying to create a poll. After our usability
+              testers successfully logged in, there is a tiny blue button with add sign showing “create a doodle” on the
+              upper left corner. The name was not quite fit with our scenario requested. However, there was also a class
+              called “create new poll ” with three possible choices. So our usability testers thought the solution is
+              among those three choices, which makes them even confused to understand the differences among “Schedule an
+              Event”, “Make a Choice” and “Schedule a 1:1 Meeting”.
+
+            </p>
+            <p>
+              Our biggest finding in terms of ambiguity is in scheduling a 1:1 meeting. Scheduling a one-on-one meeting
+              is one of the three main categories of poll creation. But in order to complete such a poll, it requires
+              users to integrate their calendar. Even if the user selects “I will do this later,” Doodle prevents the
+              user from proceeding until they integrate their calendar. Polls don’t have instructions for creating them,
+              which leaves users confused on how to make them. The vagueness of requirements for this kind of poll
+              didn’t allow one of our usability users to create a 1:1 poll.
+            </p>
+          </p>
+        </div>
 
       </div>
+
+      <div class="project-section">
+        <h2>Redesign</h2>
+        <strong>Revising the flow of creating a Doodle</strong>
+        </div>
+        <p></p>
+      </div>
+
+
 
 
     </div>
@@ -375,14 +381,10 @@
 
 
 
-  </div>
 
-  <footer class="footer">
-    <div><a href="index.html">← Back to Home</a></div>
-  </footer>
 
   </div>
 </body>
 
-
+<script src="script.js"></script>
 </html>
