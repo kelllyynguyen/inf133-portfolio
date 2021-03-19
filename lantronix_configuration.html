@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Kelly Nguyen">
+  <meta name="description" content="This is my responsive portfolio written in HTML and CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <!-- Favicon head tag -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Kelly Nguyen | Lantronix ConsoleFlow - Configuration</title>
+</head>
+
+
+
+
+<body>
+
+  <div class="container-fluid animation footer-margin" style="max-width:1000px">
+    <nav class="navbar navbar-custom">
+      <a href="index.html">
+        <div id="name">Kelly Nguyen</div>
+        <div class="med-text">UX / UI Designer</div>
+      </a>
+    </nav>
+
+    <div class="spacer"></div>
+
+    <div class="section-content">
+
+
+      <div class="project-section">
+        <img class="img-fluid" src="assets/cf-config/ltrx-config.png" />
+      </div>
+
+      <h1>Lantronix ConsoleFlow - Configuration</h1>
+      <div class="spacer"></div>
+
+      <div class="project-section">
+        <h2>Background</h2>
+        <p>
+          ConsoleFlow is a centralized management platform that allows network operators, engineers, and support teams
+          to
+          monitor, manage, and control their remote assets. This software aggregates data into a centralized directory
+          from assets in the data center, development lab, or remote/branch office.
+        </p>
+        <p>
+          This project focused on the design
+          for remote configuration through a graphical user interface and templates.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Problem</h2>
+        <p>
+          <b>Users don't have an intuitive user interface to configure their devices through the cloud.</b><br /> If
+          they want
+          to configure the device through a GUI, they must log into it and make the desired changes. Otherwise, they
+          connect to the device remotely and interact through CLI.
+
+        </p>
+        <p>
+          <b>Users take too long configuring multiple devices.</b> <br />Organizations buy dozens or hundreds of
+          devices.
+          They want to reduce the amount of time they’re spending
+          configuring devices so they can focus on monitoring and maintaining their assets.
+        </p>
+
+        <div class="project-section">
+          <img class="img-fluid zoom-img" data-enlargable src="assets/cf-config/cf-config-problem.png" />
+        </div>
+      </div>
+
+
+      <div class="project-section">
+        <h2>Solution</h2>
+
+        <p>
+          Include a streamlined graphical user interface for configuration through the cloud that allows users to
+          remotely configure
+          batches of devices. Use the graphical user interface to create templates that contain a device’s full or
+          partial
+          configuration that can be pushed to 1...N devices.
+        </p>
+        <div class="project-section">
+          <img class="img-fluid" src="assets/cf-config/mika-config-template.svg" />
+        </div>
+
+        <p>
+          This project was initiated before I joined the company, so I was not included in the discussion of
+          requirements, user stories, or exploration of solutions. The proposed solution was determined by product
+          management.
+        </p>
+      </div>
+
+
+      <div class="project-section">
+        <h2>The Team</h2>
+
+        <p>
+          This feature required collaboration from product management and engineering - both on device firmware side and
+          cloud side. The IoT and Out-of-Band principal engineers needed to know what configuration data the devices had
+          to send, and the backend cloud engineer needed to process that information. I worked primarily with the
+          product line manager to translate user stories into designs and with the backend engineer to review if the
+          design fit into the proposed schedule.
+        </p>
+
+        <div class="project-section">
+          <img class="img-fluid" src="assets/cf-config/mika-config-team.svg" />
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Process</h2>
+        <p>
+          The first thing I had to do was to <b>thoroughly understand existing user flows.</b> I conducted
+          interviews with the field application engineers to understand how users currently configure their devices
+          directly when logged in.
+        </p>
+        <div class="project-section">
+          <img class="img-fluid zoom-img" data-enlargable src="assets/cf-config/cf-existing-flow.png" />
+
+        </div>
+        <h3>Interviews</h3>
+        <p>I conducted two interviews with field application engineers and asked the following questions while they shared their screen: </p>
+        <ol>
+          <li>Using the device's web manager, how do you configure the network settings on your device?</li>
+          <li>How do you configure the device ports?</li>
+          <li>What are some other parameters you configure on a regular basis?</li>
+        </ol>
+        <h3>Findings</h3>
+        <strong>There is an extensive amount of configuration parameters.</strong>
+        <p>The web manager for configuring devices can be overwhelming because of amount of options presented to the user. They can easily get lost on the user interface because they may not remember where to go to configure certain parameters.</p>
+
+        <strong>Users configure their devices in small chunks at a time.</strong>
+        <p>
+          Changes are applied page by page. At the bottom of each configuration page, there is an "Apply" button, and users see immediate feedback after changes occur.
+          They are immediately informed of the success state and if any errors occurred.
+        </p>
+
+        <p>With these findings in mind and a better understanding of existing user flows, I headed to Adobe XD to start brainstorming and designing.</p>
+
+
+        <h3>Iteration 1</h3>
+
+        <img class="img-fluid zoom-img" data-enlargable src="assets/cf-config/iteration-1.png" />
+
+
+        <p>Designed high fidelity mockups representing what I saw on the device's web manager and embedding it into the existing ConsoleFlow design</p>
+        <p>Had to adapt to product line management's requirements for information architecture on where the new configuration feature would go</p>
+        <p>Reviewed with out-of-band device engineers for usability feedback</p>
+        <p>Reviewed with field application engineers for usability feedback through video recorded demos and open discussion.</p> 
+        <strong>Limitations</strong>
+        <p>Lorem</p>
+
+        <h3>Iteration 2</h3>
+        <p>Fixing some confusion on templates</p>
+        <p>Clarified the way templates can be applied partially</p>
+
+        <h4>Iteration 3</h4>
+        <p>Job status, awareness, and recovering from errors</p>
+        <p>Making it easier for users to see exactly what's going on</p>
+
+        <h2>Final Product</h2>
+
+
+
+        
+
+
+      </div>
+
+      <!-- <div class="project-section">
+        <h2>Iteration 1</h2>
+        <p>
+          This was my first attempt to incorporate GUI-based configuration onto ConsoleFlow. My first thought here was
+          <b>“How can I integrate a new feature into the existing user interface?”</b>
+        <div class="img-wrap green">
+          <img data-enlargable src="assets/cf-config/cf-configs.png" class="img-fluid zoom-img img-bg" />
+        </div>
+        <p>
+
+        </p>
+        </p>
+      </div> -->
+
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+      <div><a href="index.html">← Back to Home</a></div>
+    </footer>
+
+  </div>
+  <script src='script.js'></script>
+
+</body>
+
+
+</html>

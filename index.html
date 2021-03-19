@@ -12,7 +12,11 @@ EMAIL: kellyan1@uci.edu
   <meta name="description" content="This is my responsive portfolio written in HTML and CSS">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css?family=Manrope:200,400,500,700,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
@@ -20,81 +24,69 @@ EMAIL: kellyan1@uci.edu
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JVHVL93SM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-5JVHVL93SM');
+  </script>
   <title>Kelly Nguyen - UX / UI Designer</title>
 </head>
 
-<body>
+<body class="main">
+
+  <div class="container-fluid animation" style="max-width: 1900px">
+
+    <div class="projects-nav">
+      <p style="margin-bottom:0"><a href="index.html">Kelly Nguyen — </p>
+      <p>UI / UX Designer</p></a>
+    </div>
+  </div>
+
   <div class="container-fluid animation" style="max-width: 1000px;">
-    <nav class="navbar navbar-custom">
-      <a href="index.html">
-        <div id="name">Kelly Nguyen</div>
-        <div class="med-text">UX / UI Designer</div>
-      </a>
-    </nav>
-
-    <div class="spacer"></div>
-
-
     <section class="intro">
-      <div class="med-text">I'm a customer-centric, collaborative designer and developer keen on creating outstanding
-        user experiences for B2B and B2C clients.</div>
+      <h1>Hi, I'm Kelly.</h1>
+      <h1>I strive to improve how people and organizations
+        <span class="txt-rotate" data-period="2000" data-rotate='[ "live", "work", "play" ]'></span>
+        in a digital world.
+      </h1>
     </section>
+  </div>
 
-    <div class="spacer"></div>
-
+  <div class="container-fluid animation" style="max-width: 1900px">
     <section>
       <div class="row imagetiles">
-
+        <div class="col-sm-6 col-xs-12">
+          <a href="lantronix-navigation.html">
+            <div class="portfolio-item">
+              <img src="assets/Lantronix-menu.png" class="img-fluid" />
+            </div>
+          </a>
+        </div>
         <div class="col-sm-6 col-xs-12">
           <a href="assure.html">
             <div class="portfolio-item">
-              <img src="assets/portfolio-item-assure.png" class="img-fluid" />
+              <img src="assets/assure.png" class="img-fluid" />
             </div>
           </a>
         </div>
-
-        <div class="col-sm-6 col-xs-12">
-          <a href="dreamsforschools.html">
-            <div class="portfolio-item">
-              <img src="assets/portfolio-item-dfs.png" class="img-fluid" />
-            </div>
-          </a>
-        </div>
-
-
-        <div class="col-sm-6 col-xs-12">
-          <a href="lantronix.html">
-            <div class="portfolio-item">
-              <img src="assets/portfolio-item-ltrx.png" class="img-fluid" />
-            </div>
-          </a>
-        </div>
-
-
-
-
-
-        <!-- <div class="col-sm-6 col-xs-12">
-          <a href="doodle.html">
-            <div class="portfolio-item">
-              <img src="assets/portfolio-item-doodle.png" class="img-fluid" />
-            </div>
-          </a>
-        </div> -->
-
-        
-
-
       </div>
-
     </section>
-
-    <footer class="landing-footer">
-      <div>© 2020 Kelly Nguyen</div>
-    </footer>
   </div>
+
+
+  <footer>
+    <div class="container-fluid animation"
+      style="max-width: 1900px; margin-top:4em; margin-bottom: 4em; text-align:center;">
+      <p>© 2021 Designed and Developed by Kelly Nguyen</p>
+    </div>
+  </footer>
+
+
 </body>
 
+<script src="./script copy.js"></script>
 
 </html>

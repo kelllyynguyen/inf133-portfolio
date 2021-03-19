@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Kelly Nguyen
+EMAIL: kellyan1@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Kelly Nguyen">
+  <meta name="description" content="This is my responsive portfolio written in HTML and CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JVHVL93SM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5JVHVL93SM');
+  </script>
+  <title>Kelly Nguyen - UX / UI Designer</title>
+</head>
+
+<body class="main">
+
+  <div class="container-fluid animation" style="max-width: 1900px">
+
+    <div class="projects-nav">
+      <p style="margin-bottom:0"><a href="index.html">Kelly Nguyen — </p>
+      <p>UI / UX Designer</p></a>
+    </div>
+  </div>
+
+  <section style="margin-bottom: 4em">
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1 class="title">
+        Lantronix Navigation
+      </h1>
+      <h2>How can we make it easier for customers to find our products?</h2>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h2>The Problem</h2>
+      <h3>Users have a difficult time finding our products.</h3>
+
+      <p>
+
+        After the acquisition of two companies, Lantronix struggled with organizing its portfolio of products into an
+        easy-to-navigate product hierarchy that was clear to site visitors - both old and new.
+      </p>
+
+      <p>
+        Many users told me that they were getting frustrated because they were
+        <strong>spending too long trying to find a product</strong> and <strong>couldn't remember how to get to a
+          certain product page.</strong>
+
+      </p>
+
+      <p>
+        Users in this context are <strong>anyone</strong> that interacts with our website, including our distributors,
+        value-added resellers, investors, customers, even our <strong>internal sales and marketing team.</strong>
+
+      </p>
+
+      <p>
+        I can recall multiple meetings where a coworker would share their screen to show something on a product page,
+        but
+        would get lost in the process. And others in the meeting would have to help out by saying exactly where to hover
+        or click.
+      </p>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/Problem.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>User Research</h1>
+      <h2>How do users find our products on the website?</h2>
+
+      <p>My first objective was trying to understand exactly <strong>how users navigated through our website to find a
+          product.</strong>
+        There are a number of ways to find our products: using the search bar, the navigation menu,
+        product category pages, a product index, and "filter all products" page.
+      </p>
+      <p>
+        I wanted to see which method was the most common and exactly what steps users take for their preferred method.
+      </p>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/User Research.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <p>
+        I chose to conduct <strong>unmoderated usability testing</strong> because it would allow me to observe users
+        every step and hear their thought process (via think-aloud protocol).
+      </p>
+
+      <p>Not only was it important for me to observe the usability of the interface components on the website, but also
+        dig deeper into <strong>potential information architecture problems</strong> due to new products being added
+        onto the website.
+        Therefore, I included tasks involving products belonging to different high-level categories (e.g. Embedded
+        Solutions,
+        External Gateways, Software Services) </p>
+
+      <p><b>Example Task</b><br />You are interested in Lantronix's tracking device, the FOX3. How would you find it on
+        our website?
+      </p>
+
+    </div>
+  </section>
+
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/findings.gif" style="box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.16); border-radius: 16px;
+                margin-top: 2rem; margin-bottom: 2rem" />
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Key Findings</h1>
+      <h2>Hovering interactions for the navigation menu caused users to commit errors.</h2>
+
+      <p>
+        3 out of 7 participants accidentally clicked on a menu item when they meant to hover over it, causing them
+        multiple tries to complete a task.
+      </p>
+
+
+
+      <h2>Participants had difficulty viewing what was underneath a product category.</h2>
+
+      <p>
+        Because each product category has many subcategories, users repeatedly navigated down the tree in hopes that the
+        product or category they're looking for shows up.
+      </p>
+
+      <h2>Not everyone is familiar with our products and what categories they fall under.</h2>
+
+      <p>
+        For example, the xPort is a device server, but some participants couldn't recall if it was a server or gateway.
+        Therefore, a lot of time was spent exploring the menu items.
+      </p>
+
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/affinity-diagram.png" />
+    </div>
+  </section>
+
+
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>The Solution</h1>
+      <h2>Reorganize the product hierarchy into categories that make sense.</h2>
+
+      <p>
+        For example, all of the products from our acquired company, Intrinsyc, were lumped together into "Intelligent
+        Edge Solutions," which doesn't provide enough context to users.
+      </p>
+
+      <p>
+        I worked collaboratively with product line management and marketing to come up with product category names that
+        were <strong>a) intuitive to customers</strong> and <strong>b) cohesive among product lines</strong>.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/product-hierarchy.png" />
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h2>Redesign the hierarchy to display content in a "flatter" fashion.</h2>
+
+      <p>
+        This would hope to solve the "guessing" game a lot of participants were playing in the usability test and reduce
+        the amount of interaction required to view subcategories and products.
+      </p>
+
+    </div>
+  </section>
+
+
+
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/solution.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Visual Design</h1>
+      <p>I used the Lantronix brand guideline to incorporate appropriate colors and fonts into the navigation menu.</p>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/7.png" />
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/8.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Challenges</h1>
+      <h2>Adapting the design due to WordPress plugin constraints.</h2>
+
+      <p>
+        The WordPress plugin did not allow us to follow the design exactly as intended.
+      </p>
+      <p>
+        The content window would not change dynamically, and would retain the height of the category with the tallest
+        height. As a result, a large amount of whitespace is shown on menus with few products.
+      </p>
+      <p>
+        To reduce time to production, I designed an alternative option to fill the whitespace with marketing content to
+        help promote content related to our products, e.g. blog posts, case studies, and featured images.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1600px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/challenges.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Next Steps</h1>
+      <h2>Usability testing on staging environment</h2>
+      <p>
+        Visual design is only one portion of improving the information architecture on the navigation menu.
+      </p>
+      <p>
+        After the web development team completes re-categorization of products, another layer of testing must be done to
+        see if the visual design and product categorization has improved the user experience.
+      </p>
+
+    </div>
+  </section>
+
+  <section style="height:8em">
+  </section>
+
+  <footer>
+    <a href="assure.html">
+      <div class="container-fluid animation" style="max-width: 900px; padding-bottom: 4em">
+        <p style="margin-bottom:0">Next Project</p>
+        <h3>Assure →</h3>
+      </div>
+    </a>
+
+  </footer>
+
+  <div class="back-to-top-wrapper">
+    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top" id=>
+      <div id="myBtn" style="display:none;     animation: 1s ease-out 0s 1 fadeIn;
+">↑</div>
+    </a>
+  </div>
+
+
+
+</body>
+
+
+<script src="script2.js"></script>
+
+</html>

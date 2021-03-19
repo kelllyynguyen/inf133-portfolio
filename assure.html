@@ -1,417 +1,603 @@
 <!doctype html>
 <html lang="en">
 
+<!--
+WRITTEN BY: Kelly Nguyen
+EMAIL: kellyan1@uci.edu
+-->
+
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Kelly Nguyen">
-    <meta name="description" content="This is my responsive portfolio written in HTML and CSS">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="author" content="Kelly Nguyen">
+  <meta name="description" content="This is my responsive portfolio written in HTML and CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Manrope:200,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat&display=swap"
+    rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="style.css">
 
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Favicon head tag -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JVHVL93SM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <title>Kelly Nguyen | Assure</title>
+    gtag('config', 'G-5JVHVL93SM');
+  </script>
+  <title>Kelly Nguyen - UX / UI Designer</title>
 </head>
 
-<body>
+<body class="main">
 
-    <div class="container-fluid animation footer-margin" style="max-width:1000px">
-        <nav class="navbar navbar-custom">
-            <a href="index.html">
-                <div id="name">Kelly Nguyen</div>
-                <div class="med-text">UX / UI Designer</div>
-            </a>
-        </nav>
+  <div class="container-fluid animation" style="max-width: 1900px">
 
+    <div class="projects-nav">
+      <p style="margin-bottom:0"><a href="index.html">Kelly Nguyen — </p>
+      <p>UI / UX Designer</p></a>
+    </div>
+  </div>
 
-        <div class="spacer"></div>
-
-        <div class="section-content">
-            <h1>Assure</h1>
-            <div class="spacer"></div>
-
-            <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                    <div class="project-section">
-                        <h3>Role</h3>
-                        <p>Developer</p>
-                    </div>
-                    <div class="project-section">
-                        <h3>Timeline</h3>
-                        <p>January 2020 to March 2020</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-xs-12">
-                    <div class="project-section">
-                        <h3>Context</h3>
-                        <p>University of California, Irvine IN4MATX 134</p>
-                    </div>
-                    <div class="project-section">
-                        <h3>Tools</h3>
-                        <p>Figma and Wix</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-section">
-                <h2>Project Brief</h2>
-                <p>
-                    Assure is a mobile application and wearable that addresses concerns of sexual harassment. If you’ve
-                    ever felt wary walking out at night by yourself, unsure of how to protect yourself from a harasser,
-                    or want a space to communicate with others who’ve gone through similar situations, Assure aims to
-                    provide solutions to address these very problems. Currently, there is a lack of resources as well as
-                    support available for individuals who may be at risk or who have experienced some form of sexual
-                    harassment. Our product aims to fill that gap by providing a set of features that help a user to
-                    prevent, protect, and recover from incidents of sexual harassment.
-                </p>
-            </div>
-
-            <div class="project-section">
-                <h2>My Role</h2>
-                <p>
-                    My main role for this project was a developer. I shortly worked with iOS Swift to build the mobile
-                    app, but as our MVP pivoted, we decided to build an advertisement website for our MVP instead. In
-                    addition to development, I researched competitors, conducted interviews and surveys, and made
-                    important design decisions for the prototype.
-                </p>
-            </div>
-
-            <div class="project-section">
-                <h2>Lean Canvas</h2>
-
-                <img data-enlargable src="assets/assure/figure1.png" class="img-fluid zoom-img" />
-
-            </div>
-
-            <div class="project-section">
-                <h2>Value Proposition Canvas</h2>
-                <img data-enlargable src="assets/assure/figure2.png" class="img-fluid zoom-img" />
-
-            </div>
-
-            <div class="project-section">
-                <h2>Research</h2>
-                <div class="subsection">
-                    <strong>Study Objectives</strong>
-                    <div class="mini-spacer"></div>
-                    <ol>
-                        <li>What are people's <b>understanding</b> of sexual harrassment?</li>
-                        <li>How <b>safe</b> do people feel being alone at night, or in the daytime?</li>
-                        <li>What <b>measures</b> do people currently take when they feel uncomfortable or
-                            unsafe?</li>
-                        <li>What <b>actions</b> would they take or <em>want</em> to take in such
-                            circumstances?</li>
-                    </ol>
-
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="subsection">
-                    <strong>Research Methods</strong>
-                    <div class="mini-spacer"></div>
-                    <div class="header-dark">Interviews</div>
-                    <p>
-                        We created a list of questions we wanted to ask the interviewees that would help us address our
-                        goals. For example, we asked:
-                        <ul>
-                            <li>Have you ever felt afraid of going out on your own? When? Why?</li>
-                            <li> What protective measures do you normally take?</li>
-                        </ul>
-                        My group did a total of <b>6 interviews</b> that helped us understand our users' challenges and
-                        approaches better. The data collected included people’s responses to our questions.
+  <section style="margin-bottom: 4em">
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1 class="title">
+        Assure
+      </h1>
+      <h2>How can we IoT to address sexual harassment?</h2>
+    </div>
+  </section>
 
 
 
-                    </p>
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h2>The Problem</h2>
+      <h3>Users have a difficult time finding our products.</h3>
 
-                    <div class="header-dark">Surveys</div>
-                    <p>
-                        We started by defining goals and creating a list of questions for the survey. The questions on
-                        the survey were broken down into 3 sections - General Info, Personal Experience and Witnessing.
-                        Questions included:
-                        <ul>
-                            <li>How safe do you feel to walk alone during the day/night? </li>
-                            <li>If you have experienced sexual harassment, where did it take place? (optional — feel
-                                free to omit this if you are not comfortable)</li>
-                        </ul>
-                        We received a total of <b>126 responses</b> for the survey. Answers varied based on the
-                        questions that
-                        were either multiple choice, Likert scale, or short answer.
+      <p>
+        Sexual harassment is a problem many individuals face throughout their lives. It includes unwelcome,
+        inappropriate sexual remarks or unwanted physical advances.
+      </p>
 
+      <p>
+        People may face sexual harassment in many settings - in public, at work, in social situations, and at home.
+      </p>
 
-                    </p>
+      <p>
+        We are limited to what problems we can solve with a technological solution, so we have identified the following
+        as problems related to sexual harassment:
 
-                </div>
+      </p>
 
-            </div>
+      <p>
+        <strong>People are afraid to walk at night by themselves.</strong>
+      </p>
 
-            <div class="project-section">
-                <h2>Findings</h2>
-                <div class="subsection">
-                    <strong>Interviews</strong>
-                    <p>
-                        To synthesize our data, we created an affinity diagram using post-it notes that had our
-                        participant's responses written. Here were the findings:
-                        <ul>
-                            <li><b>Presence</b> of other people helps thwart potential advances.</li>
-                            <li>People <b>avoid walking at night</b> and in dangerous areas.</li>
-                            <li>People find that reporting incidents is <b>unnecessary</b>. They instead talk to friends
-                                or
-                                family to cope with it.</li>
-                            <li>During uncomfortable situations, people don’t have enough <b>time to react</b>.</li>
-                        </ul>
-                    </p>
-                    <div class="spacer"></div>
-                    <img data-enlargable src="assets/assure/figure3.png" class="img-fluid zoom-img" />
-                </div>
-                <div class="spacer"></div>
-                <div class="subsection">
-                    <strong>Surveys</strong>
-                    <p>The data collected included percentages broken down by the number of users who answered the
-                        questions. The short answer responses on the survey were used for affinity diagramming along
-                        with responses from interviews. The numbers for certain responses were used to inform analysis
-                        of interview questions.
-                    </p>
+      <p>
+        <strong>People aren’t sure how to protect themselves when they’re uncomfortable.</strong>
+      </p>
 
-                    <p>
-                        Some key insights on the survey included:
-                        <ul>
-                            <li>~61% of respondents feel <b>unsafe</b> walking at night.</li>
-                            <li>~66% of respondents have <b>experienced</b> some form of harassment in the past.</li>
-                            <li>Walking with someone is one of the most <b>effective protective measures</b>.</li>
-                            <li>~48% of respondents are not so likely to <b>report</b> an incident of harassment.</li>
-                        </ul>
-                    </p>
-                    <div class="spacer"></div>
-
-                    <img data-enlargable src="assets/assure/figure4.png" class="img-fluid zoom-img" />
-                    <div class="spacer"></div>
-                    <img data-enlargable src="assets/assure/figure5.png" class="img-fluid zoom-img" />
-
-                </div>
-
-            </div>
-
-            <div class="project-section">
-                <h2>Ideation</h2>
-                <div class="subsection">
-                    <strong>User Flows + Features</strong>
-                    <p>
-                        Based on on our insights, we discussed potential features and user flows that would be useful
-                        for our target audience.
-                    </p>
-                    <div class="header-dark">Live Tracking + Check-In</div>
-                    <div class="tab">
-                        Our respondents said that they feel unsafe walking at night and that they confide in friends and
-                        family when dealing with uncomfortable situations. We came up with a live tracking feature where
-                        users can alert their emergency contacts that they feel endangered and to keep an eye on them.
-                        We also though of a check-in system where users can check-in with their emergency contacts at regular time intervals.
-                    </div>
-                    <div class="mini-spacer"></div>
-                    <div class="img-wrap green">
-                        <img data-enlargable src="assets/assure/sketches1.jpeg" class="img-fluid zoom-img img-bg" />
-                    </div>
-                    <div class="spacer"></div>
-                    <div class="header-dark">Panic Alert</div>
-                    <div class="tab">
-                        Respondents mentioned that there is little time to react in the event of sexual harrassment.
-                        Using the IoT device, we planned to have users press a button to blare a loud sound and deter
-                        assailants, and would also alert emergency contacts that the user is in danger. In addition, the
-                        app would record the time, date, and location to save information for potential incident
-                        reports.
-                    </div>
-
-                </div>
-                <div class="spacer"></div>
-                <div class="subsection">
-                    <strong>Sketches</strong>
-                    <div class="mini-spacer"></div>
-                    <div class="row imagetiles">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="img-wrap green">
-                                <img data-enlargable src="assets/assure/sketches2.jpg" class="img-fluid zoom-img img-bg" />
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="img-wrap green">
-                                <img data-enlargable src="assets/assure/sketches3.jpg" class="img-fluid zoom-img img-bg" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="project-section">
-                <h2>Final Product Features</h2>
-
-                <div class="subsection">
-                    <strong>Live Tracking</strong>
-                    <p>
-                        With live tracking,
-                        users can input where they're heading and the system would periodically check in to make sure
-                        they're safe. Or, they can immediately turn on live tracking to alert their loved ones that
-                        they're feeling unsafe and to check in on them.
-                    </p>
-                    <p>
-                        While their loved ones may not be with them in-person, having their <b>presence and
-                            acknowledgement</b> at the other end of the line can provide added reassurance and sense of
-                        security
-                        since these contacts can be more equipped to respond.
-                    </p>
-                    <p>
-                        Live tracking can either be used on the mobile app or the IoT device. The IoT device can be used
-                        to send a check-in or contact the authorities in case of an emergency.
-                    </p>
-                    <img data-enlargable class="img-fluid zoom-img" src="assets/assure/figure7.png" />
-                    <div class="spacer"></div>
+      <p>
+        <strong>People don’t have a way to recover from traumatizing events.</strong>
+      </p>
+    </div>
+  </section>
 
 
-                </div>
-                <div class="subsection">
-                    <strong>Incident Reporting</strong>
-                    <p>
-                        After an incident, whether or not it was recorded through Assure’s live-tracking feature, can
-                        still be reported. These reports aren’t official reports that are sent to authorities.
-                        Instead, these are <b>self-reports</b> that can either be used for future reference or, with the
-                        permission of the individual, added to the <b>community map</b> to populate the self-reported
-                        incidents view on the Interactive Map.
-                    </p>
-                    <img data-enlargable class="img-fluid zoom-img" src="assets/assure/figure8.png" />
-                    <div class="spacer"></div>
-                </div>
-
-                <div class="subsection">
-                    <strong>Interactive Map</strong>
-                    <p>
-                        When users are planning for a trip or preparing to head out, they can use the interactive map to
-                        learn more about the surrounding areas. This feature serve to <b>inform</b>, and hopefully
-                        prevent, a
-                        user from encountering some form of sexual harassment. By providing different information
-                        regarding certain areas such as risk levels, registered sex-offenders, and self-reported
-                        incidents, users can be <b>more informed about the areas they are in</b> or areas they will
-                        visit so
-                        that they can be more cautious or be prepared to take protective measures.
-
-                    </p>
-                    <img data-enlargable class="img-fluid zoom-img" src="assets/assure/figure9.png" />
-                    <div class="spacer"></div>
-                </div>
-
-                <div class="subsection">
-                    <strong>Community Forum</strong>
-                    <p>
-                        The community forum is a forum for individuals looking for a <b>supportive environment</b> to
-                        heal in
-                        or for individuals to find more information about ways to protect themselves or get justice and
-                        overall, just a place to connect with others and tackle the issue of sexual harassment
-                        together. Users can create posts, look and read through other posts and pages, as well as
-                        interact with other posts and users by commenting and liking posts and messages.
-
-                    </p>
-                    <img data-enlargable class="img-fluid zoom-img" src="assets/assure/figure10.png" />
-                    <div class="spacer"></div>
-                </div>
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/problem.png" />
+    </div>
+  </section>
 
 
-            </div>
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>User Research</h1>
+      <h2>Understanding the problem space</h2>
 
-            <div class="project-section">
-                <h2>Final Prototype</h2>
-                <div class="img-wrap blank">
-                    <p><a href="https://www.figma.com/file/s3KviePbJqWDp4BqrTc00f/134-Wireframes" target="_blank">Click
-                            here to view the full prototype on Figma!</a></p>
-                    <a href="https://www.figma.com/file/s3KviePbJqWDp4BqrTc00f/134-Wireframes" target="_blank"><img
-                            class="img-fluid img-bg" src="assets/assure/figure11.png" /></a>
+      <h3>Interviews</h3>
+      <p>
+        We conducted <strong>6 interviews</strong> to get anecdotal information regarding sexual harrassment.
+      </p>
+      <p>For example, we asked: "Have you ever felt afraid of going out on your own? When? Why?" and
+        "What protective measures do you normally take" </p>
 
-                </div>
+      <h3>Surveys</h3>
+      <p>
+        We received <strong>126 responses</strong> on our survey which consisted of more quantitative responses.
+      </p>
+      <p>For example, we asked:
+        "How safe do you feel walking alone during the day? Night time?" and
+        "How likely are you to report an incident of sexual harassment?"</p>
 
-            </div>
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/findings-2.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Key Findings</h1>
+      <h2>The presence of other people helps thwart potential advances.</h2>
+
+      <p>
+        Respondents noted that walking with someone is one of the most effective protective measures against sexual
+        harassment.
+      </p>
 
 
 
-            <div class="project-section">
-                <h2>MVP</h2>
-                <p>
-                    Our original MVP was supposed to be a Kickstarter but we quickly had to rethink this goal since it
-                    would take multiple days for it to be approved and we didn’t have a clear idea on how to promote the
-                    Kickstarter without any advertisements or promotional videos. So instead, we created a website to
-                    garner attention to the idea of our product in the meantime.
-                </p>
-                <div class="img-wrap green">
-                    <p><a href="https://kellynguyen97.wixsite.com/assure" target="_blank">Click here to visit the Assure
-                            website!</a></p>
-                    <div class="mini-spacer"></div>
+      <h2>Participants avoid walking at night and/or in dangerous areas.</h2>
 
-                    <a href="https://kellynguyen97.wixsite.com/assure/" target="_blank"><img
-                            src="assets/assure/figure6.png" class="img-fluid img-bg" />
-                    </a>
+      <p>
+        61% of respondents feel unsafe walking at night. To combat the feeling of unsafety, they avoid walking at night
+        or walking in areas that they understand to be dangerous.
+      </p>
 
-                </div>
-                <div class="spacer"></div>
-                <p>
-                    Within our product hypothesis, we stated that Assure will solve the lack of reources and support
-                    available to individuals who may be at risk or have experienced sexual harassment. We have found
-                    through our surveys and interviews that many early adopters see a true need for this type of
-                    product.
-                </p>
-                <p><b>Our prototype was vital in getting feedback on the type of application that
-                        our audience needed.</b> Without the constant iterations of bettering our prototype, we would
-                    not know
-                    the exact features our primary users would utilize most or how they would best navigate the
-                    application.
-                </p>
-                <p>Our website will help to serve as our main form of advertisement of our product to
-                    garner attention and further connect to our audience while we theoretically work to implement our
-                    mobile application and IoT wearable device.</p>
-
-            </div>
-
-            <div class="project-section">
-                <h2>Lessons Learned</h2>
-                <strong>Learning about the problem space</strong>
-                <p>Many people approach sexual harrassment differently. As a woman, I've had countless experiences
-                    feeling unsafe when I'm alone in unfamiliar areas. It was great to hear from so many different
-                    people about how they approach the situation and how we could help build a product that would
-                    satisfy their needs.</p>
-
-                <div class="mini-spacer"></div>
-                <strong>Product strategy</strong>
-                <p>
-                    I learned a lot about creating a product that is not only usable, but also of value and solves
-                    actual user needs. After conducting interviews and surveys, we had very good insights about what
-                    potential users would want to see in an application that would make them feel safer.
-                </p>
+      <h2>There's not enough time to react in incidents of sexual harassment.</h2>
+      <p>In the free response section, some participants noted that the shock they experience from an incident doesn't
+        allow them to fully process and respond to the perpatrator(s).
+      </p>
 
 
-                <div class="mini-spacer"></div>
-                <strong>Process of developing an MVP</strong>
-                <p>
-                    Creating an MVP is not a one-and-done task. After conducting prototype testing, we had to redefine
-                    our MVP - we had to fail. We had to determine fail points, realign value propositions, adjust based
-                    on our time constraints, and realize missed opportunities. After doing this, we were able to build
-                    an MVP that would have value to our potential customers.
-                </p>
-            </div>
+      <h2>Reporting to authorities is not necessary.</h2>
 
+
+      <p>
+        48% of respondents are not so likely to report an incident of harassment. They instead want to talk to family or
+        friends to cope with it.
+      </p>
+
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/findings.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Ideation</h1>
+
+      <h2>Live Tracking and Check In</h2>
+
+      <p>
+        Our respondents said that they feel unsafe walking at night and confide in family or friends when feeling
+        uncomfortable.
+      </p>
+      <p>
+        We understand that not everyone can avoid these situations, so we came up with a live tracking idea where users
+        can alert their emergency contacts to keep an eye on their location.
+      </p>
+
+      <p>
+        In addition, offer a check-in system where users can check in with their emergency contacts at regular time
+        intervals.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/tracking.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+
+      <h2>Panic Alert</h2>
+
+      <p>
+        Respondents mentioned that there is little time to react in the event of sexual harrassment.
+      </p>
+      <p>
+        Using an IoT device, we planned to have users press a button to blare a loud sound and deter assailants, and
+        would also alert emergency contacts that the user is in danger.
+      </p>
+
+      <p>
+        In addition, the app would record the time, date, and location to save information for potential incident
+        reports.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/panic-alert.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+
+      <h2>Community Board and Incident Map</h2>
+
+      <p>
+        Respondents said they are not likely to report incidents to authorities, but would like to share information
+        anonymously to raise awareness in their local community. </p>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/map-incidents.png" />
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Prototyping</h1>
+      <p>
+        We designed low fidelity prototypes to conduct usability testing and see if our user interface was intuitive. We
+        conducted <strong>8 usability tests</strong>, using a paper prototype for our IoT device and Figma Mirror for
+        our mobile app.
+      </p>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/prototyping.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+
+
+      <h1>Usability Testing Findings</h1>
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Confusing Icons</h2>
+          <p>
+            Users were unsure how to navigate to different features because they weren't sure what the icons meant.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h2>Difficulty learning gestures for IoT device</h2>
+          <p>
+            There were too many gestures for the IoT device that were difficult to learn and remember. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Unclear Instructions and Wording</h2>
+          <p>
+            Users had trouble understanding the difference between creating a new sexual harassment report vs. creating
+            one from a recorded incident. </p>
+        </div>
+        <div class="col-sm-6">
+          <h2>Lack of personalization</h2>
+          <p>
+            Users expected to see a place where they can view their liked posts and replies on the community board. </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/usability-findings.png" />
+    </div>
+  </section>
+
+
+  <section style="margin-bottom:2em">
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Iterate, Iterate, Iterate</h1>
+
+      <p>
+        We changed our mockups based on the first usability test and tackled the four major concerns.
+      </p>
+
+      <h2>
+        First-Click Tests
+      </h2>
+      <p>
+        To address confusion over the icons, we created three alternatives for the live tracking icon. We conducted
+        <strong>21
+          first-click tests using UsabilityHub.</strong>
+      </p>
+
+      <p style="text-align: center;">
+        <img data-enlargable class="img-fluid" src="assets/assure/icons.png" />
+      </p>
+
+      <h2>Moderated Usability Testing</h2>
+
+      <p>
+        We reworded the instructions, modified the gestures for the IoT device, and added a section for personalized
+        information on the app.
+
+        Our findings contributed to minor design changes that would be presented in the final prototype.
+      </p>
+
+      <div class="row">
+        <div class="col-sm-4 col-xs-12" style="text-align: center">
+          <img class="img-fluid" style="border-radius: 16px; " src="assets/assure/push.gif" />
+          <p style="margin-top:1em; font-size:0.75em"><strong>Push:</strong> Live Tracking and Check in</p>
+        </div>
+        <div class="col-sm-4 col-xs-12" style="text-align: center">
+          <img class="img-fluid" style="border-radius: 16px; " src="assets/assure/double-push.gif" />
+          <p style="margin-top:1em; font-size:0.75em"><strong>Double Push:</strong> Cancel Live Tracking</p>
+        </div>
+        <div class="col-sm-4 col-xs-12" style="text-align: center">
+          <img class="img-fluid" style="border-radius: 16px; " src="assets/assure/hold.gif" />
+          <p style="margin-top:1em; font-size:0.75em"><strong>Hold:</strong> Alert Emergency Contacts</p>
         </div>
 
-        <footer class="footer">
-            <div><a href="index.html">← Back to Home</a></div>
-        </footer>
+
+      </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>Final Design + Product Features</h1>
+
+
+      <h2>
+        Live Tracking
+      </h2>
+      <p>
+        With live tracking, users can input where they're heading and the system would periodically check in to make
+        sure they're safe. Or, they can immediately turn on live tracking to alert their loved ones that they're feeling
+        unsafe and to check in on them.
+
+      </p>
+
+
+      <p>
+        While their loved ones may not be with them in-person, having their <strong>presence and
+          acknowledgement</strong> at the other end of the line can provide added reassurance and sense of security
+        since these contacts can be more equipped to respond.
+      </p>
+
+
+      <p>
+        Live tracking can either be used on the mobile app or the IoT device. The IoT device can be used to send a
+        check-in or contact the authorities in case of an emergency.
+      </p>
+
     </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/final-tracking.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+
+
+      <h2>
+        Incident Reporting
+      </h2>
+      <p>
+        After an incident, whether or not it was recorded through Assure’s live-tracking feature, can still be reported.
+        These reports aren’t official reports that are sent to authorities.
+
+      </p>
+
+
+      <p>
+
+        Instead, these are <strong>self-reports</strong> that can either be used for future reference or, with the
+        permission of the individual, added to the community map to populate the self-reported incidents view on the
+        Interactive Map.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/final-report-incident.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+
+
+      <h2>
+        Interactive Map
+      </h2>
+      <p>
+        When users are planning for a trip or preparing to head out, they can use the interactive map to learn more
+        about the surrounding areas.
+      </p>
+
+      <p>
+        This feature serve to inform, and hopefully prevent, a user from encountering some form of sexual harassment.
+      </p>
+
+      <p>
+        By providing different information regarding certain areas such as risk levels, registered sex-offenders, and
+        self-reported incidents, users can be more informed about the areas they are in or areas they will visit so that
+        they can be more cautious or be prepared to take protective measures. </p>
+
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/final-maps.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+
+
+      <h2>
+        Community Forum
+      </h2>
+      <p>
+        The community forum is a forum for individuals looking for a <strong>supportive environment</strong> to heal in
+        or for
+        individuals to find more information about ways to protect themselves or get justice and overall, just a place
+        to connect with others and tackle the issue of sexual harassment together.
+
+      </p>
+
+      <p>
+        Users can create posts, look and read through other posts and pages, as well as interact with other posts and
+        users by commenting and liking posts and messages. </p>
+
+
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/final-community.png" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>
+        The MVP
+      </h1>
+
+      <p>
+        Our original MVP was supposed to be a Kickstarter but we quickly had to rethink this goal since it would take
+        multiple days for it to be approved. Instead, we created a <strong>website to garner attention to the
+          idea</strong> of our product in the meantime.
+
+      </p>
+
+      <p>
+        Within our product hypothesis, we stated that Assure will solve the lack of resources and support available to
+        individuals who may be at risk or have experienced sexual harassment. We have found through our surveys and
+        interviews that many early adopters see a true need for this type of product.
+      </p>
+
+      <p>
+        <strong>
+          Our prototype was vital in getting feedback on the type of application that our audience needed.
+        </strong>
+        Our website will help to serve as our main form of advertisement of our product to garner attention and
+        further connect to our audience while we theoretically work to implement our mobile application and IoT wearable
+        device.
+      </p>
+
+
+    </div>
+  </section>
+
+
+  <section class="subsection">
+    <div class="container-fluid animation" style="max-width: 1300px; text-align: center">
+      <img data-enlargable class="img-fluid" src="assets/assure/final-mvp.png" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid animation" style="max-width: 900px">
+      <h1>
+        Lessons Learned
+      </h1>
+
+      <h2>Learning about the problem space</h2>
+      <p>
+        Many people approach sexual harrassment differently. I've had countless experiences feeling unsafe when I'm
+        alone in unfamiliar areas. It was great to hear from so many different people about how they approach the
+        situation and how we could help build a product that would satisfy their needs.
+
+      </p>
+
+      <h2>Product strategy</h2>
+      <p>
+        I learned a lot about creating a product that is not only usable, but also of value and solves actual user
+        needs. After conducting interviews and surveys, we had very good insights about what potential users would want
+        to see in an application that would make them feel safer.
+      </p>
+
+      <h2>Developing an MVP</h2>
+      <p>
+        Creating an MVP is not a one-and-done task. After conducting prototype testing, we had to redefine our MVP - we
+        had to fail. We had to determine fail points, realign value propositions, adjust based on our time constraints,
+        and realize missed opportunities. After doing this, we were able to build an MVP that would have value to our
+        potential customers.
+      </p>
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <section style="height:8em">
+  </section>
+
+  <footer>
+    <a href="lantronix-navigation.html">
+      <div class="container-fluid animation" style="max-width: 900px; padding-bottom: 4em">
+        <p style="margin-bottom:0">Previous Project</p>
+        <h3>← Lantronix Navigation</h3>
+      </div>
+    </a>
+
+  </footer>
+
+  <div class="back-to-top-wrapper">
+    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top" id=>
+      <div id="myBtn" style="display:none;     animation: 1s ease-out 0s 1 fadeIn;
+">↑</div>
+    </a>
+  </div>
+
+
 
 </body>
 
-<script src="script.js"></script>
+
+<script src="script2.js"></script>
+
+</html>
